@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+$dark-cyan: hsl(158, 36%, 37%);
+$very-dark-cyan: hsl(158, 36%, 20%);
+$cream: hsl(30, 38%, 92%);
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$dark-blue: hsl(228, 45%, 44%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: $cream;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-size: 1.875rem;
+    line-height: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $dark-grayish-blue;
+    @media screen and (max-width: 600px) {
+        margin-bottom: 0.75rem;
+    }
+}
+
+p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: $dark-grayish-blue;
+    margin-bottom: 1.625rem;
+    @media screen and (max-width: 600px) {
+        font-size: 0.8125rem;
+    }
+}
+
+.card {
+    margin: 10rem auto;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 1rem;
+    display: flex;
+    background-color: #fff;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+    &__img,
+    &__content {
+        width: 50%;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            min-height: 30vh;
+        }
+    }
+    &__content {
+        padding: 2rem;
+        @media screen and (max-width: 600px) {
+            padding: 1.5rem;
+        }
+    }
+    &__img {
+        img {
+            background-image: url("../images/image-product-desktop.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem 0rem 0rem 1rem;
+            @media screen and (max-width: 600px) {
+                height: 240px;
+                border-radius: 1rem 1rem 0rem 0rem;
+            }
+        }
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        &--after {
+            font-family: "Fraunces", serif;
+            font-size: 1.875rem;
+            color: $dark-cyan;
+            margin-right: 2rem;
+        }
+        &--before {
+            font-size: 0.75rem;
+            text-decoration: line-through;
+            color: $dark-grayish-blue;
+        }
+    }
+}
+
+button {
+    width: 100%;
+    background-color: $dark-cyan;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        transition: 0.2s ease-in;
+        background-color: $very-dark-cyan;
+    }
+    img {
+        padding-right: 1rem;
+        vertical-align: middle;
+    }
+}
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    a {
+        color: $dark-blue;
+    }
+}
