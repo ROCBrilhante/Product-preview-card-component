@@ -63,7 +63,7 @@ p {
         flex-direction: column;
         margin: 2rem 1rem;
     }
-    &__img,
+    &__figure,
     &__content {
         width: 50%;
         @media screen and (max-width: 600px) {
@@ -77,19 +77,18 @@ p {
         }
     }
     &__img {
-        img {
-            background-image: url("../images/image-product-desktop.jpg");
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 100%;
-            border-radius: 1rem 0rem 0rem 1rem;
-            @media screen and (max-width: 600px) {
-                height: 240px;
-                border-radius: 1rem 1rem 0rem 0rem;
-            }
+        background-image: url("../images/image-product-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0rem 0rem 1rem;
+        @media screen and (max-width: 600px) {
+            height: 240px;
+            border-radius: 1rem 1rem 0rem 0rem;
         }
     }
+
     &__price {
         display: flex;
         align-items: center;
@@ -119,7 +118,7 @@ button {
     font-size: 0.875rem;
     font-weight: 700;
     cursor: pointer;
-    &:hover{
+    &:hover {
         transition: 0.2s ease-in;
         background-color: $very-dark-cyan;
     }
