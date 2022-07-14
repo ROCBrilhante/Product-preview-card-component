@@ -22,7 +22,7 @@ Users should be able to:
 ### Screenshot
 
 ![desktop](./design/sc/desktop.png)
-![mobile](./design/sc/mobile.jpg)
+![mobile](./design/sc/mobile.png)
 
 ### Links
 
