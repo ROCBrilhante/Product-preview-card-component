@@ -9,7 +9,7 @@
 
 body {
   background-color: #f2ebe3;
-  font-size: 16px;
+  font-size: 100%;
   font-family: "Montserrat", sans-serif; }
 
 h1 {
@@ -26,7 +26,7 @@ h4 {
   font-size: 0.875rem;
   font-weight: 500;
   color: #6c7289; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5rem) {
     h4 {
       margin-bottom: 0.75rem; } }
 
@@ -35,29 +35,29 @@ p {
   line-height: 1.375rem;
   color: #6c7289;
   margin-bottom: 1.625rem; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5rem) {
     p {
       font-size: 0.8125rem; } }
 
 .card {
   margin: 10rem auto;
-  max-width: 600px;
-  min-width: 300px;
+  max-width: 37.5rem;
+  min-width: 18.75rem;
   border-radius: 1rem;
   display: flex;
   background-color: #fff; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5rem) {
     .card {
       flex-direction: column;
       margin: 2rem 1rem; } }
   .card__figure, .card__content {
     width: 50%; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5rem) {
       .card__figure, .card__content {
         width: 100%; } }
   .card__content {
     padding: 2rem; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5rem) {
       .card__content {
         padding: 1.5rem; } }
   .card__img {
@@ -67,7 +67,7 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 1rem 0rem 0rem 1rem; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5rem) {
       .card__img {
         height: 240px;
         border-radius: 1rem 1rem 0rem 0rem; } }
@@ -101,7 +101,8 @@ button {
     background-color: #214538; }
   button img {
     padding-right: 1rem;
-    vertical-align: middle; }
+    vertical-align: middle;
+    height: 1rem; }
 
 .attribution {
   font-size: 0.6875rem;
